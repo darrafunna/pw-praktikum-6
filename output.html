@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PT. Once Sejahtera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="lamp.png" alt="logo" class="logo">
+            <h1>PT. Once Sejahtera</h1>
+        </div>
+        <div class="inputArea">
+            <div class="content">
+                <br><br>
+
+                <div class="tableContent1">
+                    <table>
+                        <tr>
+                            <td id="tNama">Nama Pelanggan</td>
+                            <td><input type="text" placeholder="Masukkan nama" id="namaID"></td>
+                        </tr>
+                        <tr>
+                            <td id="tKategori">Pilih Kategori</td>
+                            <td><select id="kategoriID">
+                                <option value="Sosial">Sosial</option>
+                                <option value="Rumah">Rumah</option>
+                                <option value="Apartemen">Apartemen</option>
+                                <option value="Industri">Industri</option>
+                                <option value="Villa">Villa</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td id="tJumlah">Jumlah Pemakaian</td>
+                            <td><input type="number" placeholder="Masukkan jumlah" id="pemakaianID"></td>
+                        </tr>
+                    </table>
+                
+                <button id="buttonID">Hitung</button>
+                <br>
+                
+                <script src="index.js"></script>
+            </div>
+            <div class="output" onload="Function()">
+                <h1>Tagihan Listrik</h1>
+                <div class="tableContent1">
+                    <table>
+                        <tr>
+                            <td id="tNama">Nama Pelanggan</td>
+                            <td><span id="outputNama"></span></td>
+                        </tr>
+                        <tr>
+                            <td id="tKategori">Kategori</td>
+                            <td><span id="outputKategori"></span></td>
+                        </tr>
+                        <tr>
+                            <td id="tJumlah">Jumlah Pemakaian</td>
+                            <td><span id="outputJumlah"></span></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <br>
+                <h1>Rincian Tagihan</h1>
+                <div class="tableContent2">
+                    <table>
+                        <thead>
+                            <tr>
+                            <th>Jumlah</th>
+                            <th>Tarif per KWH</th>
+                            <th>Abodemen</th>
+                            <th>SubTotal</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabelID">
+        
+                        </tbody>
+                    </table>
+                </div> 
+                <br>
+                <div class="tableContent1">
+                    <table>
+                        <tr>
+                            <td id="tNama">Subtotal</td>
+                            <td><span id="outputSubtotal"></span></td>
+                        </tr>
+                        <tr>
+                            <td id="tKategori">Pajak</td>
+                            <td><span id="outputPajak"></span></td>
+                        </tr>
+                        <tr>
+                            <td id="tJumlah">Bayar</td>
+                            <td><span id="outputBayar"></span></td>
+                        </tr>
+                    </table>
+                </div>   
+            </div>
+        </div>
+        <br>
+</body>
+
+</html>
